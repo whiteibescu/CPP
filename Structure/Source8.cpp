@@ -15,3 +15,4 @@ void main()
 		cout << num << "은 양수가 아닙니다" << endl;
 
 }
+

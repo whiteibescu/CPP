@@ -63,5 +63,11 @@
     <ClCompile Include="Source15.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Exampleofstruct.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Exampleofstruct2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
