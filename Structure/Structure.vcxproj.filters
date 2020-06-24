@@ -54,5 +54,14 @@
     <ClCompile Include="Source12.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Source13.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source14.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source15.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
