@@ -2,7 +2,7 @@
 
 using namespace std;
 
-void q4() {
+int main() {
     // 4. 길이가 5인 int형 배열 arr을 선언하고
     // 1, 2, 3, 4, 5로 초기화한다.
     int arr[5] = { 1,2,3,4,5 };

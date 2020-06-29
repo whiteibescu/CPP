@@ -51,10 +51,10 @@
     <ClCompile Include="array3-1.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Source.cpp">
+    <ClCompile Include="array5.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Source1.cpp">
+    <ClCompile Include="array4.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
