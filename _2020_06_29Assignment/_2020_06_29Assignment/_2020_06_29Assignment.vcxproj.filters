@@ -45,5 +45,11 @@
     <ClCompile Include="middle8.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="advanced1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="advanced2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

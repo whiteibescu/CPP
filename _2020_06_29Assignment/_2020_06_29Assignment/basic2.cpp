@@ -51,3 +51,6 @@ int main() {
     a.show();
     cout << b.getWidth() << ", " << b.getHeight() << endl;
 }
+
+
+//constructor destructor
