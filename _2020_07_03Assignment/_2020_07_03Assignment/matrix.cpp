@@ -13,10 +13,11 @@ struct Signal
 	BOOL exist;				// 신호의 존재 여부
 	char ch;				// 출력할 문자
 	int x, y;				// 현재 좌표
-	int distance;			// 이동할 거리
+	int distance;			// 이동할 거리1
 	int nFrame;				// 속도
 	int nStay;				// 속도에 대한 카운트
 };
+
 Signal S[MAX];
 
 void main()
