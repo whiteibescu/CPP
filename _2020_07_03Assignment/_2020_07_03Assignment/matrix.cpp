@@ -21,7 +21,9 @@ struct Signal
 Signal S[MAX];
 
 void main()
-{
+{	
+	setcursortype(NOCURSOR);
+	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 2);
 	int i;
 	int ch;
 	int freq = 15;
