@@ -58,4 +58,4 @@ void main()
 	st1.setName("歜痔薑");
 	st.showName();
 	st1.showName();
-}// st模資濠, st1模資濠
+}// st 模資濠, st1 模資濠
