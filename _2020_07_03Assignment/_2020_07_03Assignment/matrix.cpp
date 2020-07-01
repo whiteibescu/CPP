@@ -2,7 +2,7 @@
 #pragma warning (disable:4996)
 
 #define MAX 1024
-#define LEFT 75
+#define LEFT 75 
 #define RIGHT 77
 #define UP 72
 #define DOWN 80
