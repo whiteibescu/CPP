@@ -14,17 +14,17 @@ public:
 	{
 		name = new char[NAME_LEN]();
 	}
-	Student(Student& st)
+	/*
+	Student(Student stParam)
 	{
-		/*
-		컴파일러가 생성해준 default 복사생성자의 역할
-		멤버간의 복사
-		(얕은 복사: shallow copy)
-		name = st.name;
-		*/
-
-		// 공간을 할당 후 내용을 복사
-		// 깊은 복사 : deep copy
+		name = new char[NAME_LEN]();
+		memcpy(name, st.name, NAME_LEN);
+	}
+	*/
+	// 복사생성자의 매개변수는 반드시 reference
+	// 여야 한다
+	Student(const Student& st)
+	{
 		name = new char[NAME_LEN]();
 		memcpy(name, st.name, NAME_LEN);
 	}

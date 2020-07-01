@@ -27,5 +27,8 @@
     <ClCompile Include="_32_copyConstructor.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="_33_copyConstructor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
