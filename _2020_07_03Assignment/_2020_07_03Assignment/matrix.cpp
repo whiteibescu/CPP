@@ -22,8 +22,8 @@ struct Signal S[MAX];
 
 void main()
 {	
-	setcursortype(NOCURSOR);
-	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 2);
+	setcursortype(NOCURSOR);			//커서 없애기
+	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 2); //콘솔창 폰트 색상 초록색
 	int i;
 	int ch;
 	int freq = 15;
@@ -32,8 +32,8 @@ void main()
 	clrscr();
 	gotoxy(0, 23);
 	printf("매트릭스 흉내내기. 상하:속도 증감, 좌우:빈도 증감, ESC:종료");
-	randomize();
-	for (;;) {
+	randomize(); // srand((unsigned)time(NULL)); 
+	for (;;) {   
 		gotoxy(60, 23);
 		printf("속도:%d, 빈도:%d    ", frame, freq);
 
