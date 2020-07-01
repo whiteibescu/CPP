@@ -48,6 +48,9 @@
     <ClCompile Include="quiz.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Typing.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="turboc.h">

@@ -18,7 +18,7 @@ struct Signal
 	int nStay;				// 속도에 대한 카운트
 };
 
-Signal S[MAX];
+struct Signal S[MAX];
 
 void main()
 {	
@@ -65,17 +65,25 @@ void main()
 		}
 
 		// 새로운 신호 생성
+		int count = 0;
 		if (random(freq) == 0) {
+			int x = random(80);
+			int this_distance = random(14) + 9;
 			for (i = 0; i < MAX; i++) {
 				if (S[i].exist == FALSE) {
 					S[i].exist = TRUE;
 					S[i].ch = random('Z' - 'A' + 1) + 'A';
-					S[i].x = random(80);
+					// S[i].x = random(80);
+					S[i].x = x;
 					S[i].y = 0;
-					S[i].distance = random(14) + 9;
-					S[i].nFrame = S[i].nStay = random(15) + 5;
-					break;
+					// S[i].distance = random(14) + 9;
+					S[i].distance = this_distance;
+					// S[i].nFrame = S[i].nStay = random(15) + 5;
+					S[i].nFrame = S[i].nStay = count + 5;
+					count++;
 				}
+				if (count == 15)
+					break;
 			}
 		}
 
@@ -95,7 +103,7 @@ void main()
 			}
 		}
 
-		delay(1000 / frame);
+		delay(500 / frame);
 	}
 }
 
@@ -119,4 +127,4 @@ for (i=0;i<MAX;i++) {
 
 delay(100);
 */
-
+
