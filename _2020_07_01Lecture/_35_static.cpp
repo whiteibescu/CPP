@@ -1,7 +1,7 @@
-/* static 멤버 변수는 
-클래스의 유일하게 존재하는 변수이므로 
-주로 객체간의 통합적으로/유일하게 관리하는 데이터를
-선언해서 사용한다
+/* static 멤버 변수는
+  클래스에 유일하게 존재하는 변수이므로
+  주로 객체간의 통합적으로/유일하게 관리하는
+  데이터를 선언해서 사용한다
 */
 
 #include <iostream>
@@ -13,19 +13,22 @@ using namespace std;
 class Bitcamp
 {
 private:
-	//일반 멤버변수는 객체생성시
-	//	객체별로 생성된다
+	/*일반 멤버변수는 객체생성시 
+	객체별로 생성된다*/
 	char name[NAME_LEN];
 	int studentCnt = 0;
 
-	int sumStudentCnt = 0;
-	/*클래스가 선언시 static 멤버변수가 생성된다.
-	객체보다도 먼저 생성된다.*/
+	//int sumStudentCnt = 0;
+
+	/*클래스가 선언시 static 멤버변수가 생성된다
+	  객체보다도 먼저 생성된다
+	  아무리 객체가 많아도 클래스에 유일한
+	  변수로 존재한다
+	  모든 객체는 이 static멤버변수를 접근할 수 있다*/
+	/*static은 객체소속이 아니라 클래스 소속이다
+	다만 객체로도 접근가능하다*/
 	static int bitcampStudentCnt;
-	/*아무리 객체가 많아도 클래스에 유일한 변수로 존재한다
-	모든 객체는 이 static 멤버 변수를 접근할 수 있다.*/
-	/*static은 객체소속이 아니라 클래스 소속이다.
-	다만 객체로도 접근가능하다.*/
+
 public:
 	Bitcamp(const char* _name, int _studentCnt)
 	{
@@ -33,7 +36,7 @@ public:
 			_name, strlen(_name) + 1);
 		studentCnt = _studentCnt;
 
-		sumStudentCnt += _studentCnt;
+		//sumStudentCnt += _studentCnt;
 		bitcampStudentCnt += _studentCnt;
 	}
 	void showInfo()
@@ -42,10 +45,10 @@ public:
 		cout << "학생수 : " << studentCnt << endl;
 	}
 
-	int getSumStudentCnt()
-	{
-		return sumStudentCnt;
-	}
+	//int getSumStudentCnt()
+	//{
+	//	return sumStudentCnt;
+	//}
 
 	static int getBitcampStudentCnt()
 	{
@@ -72,9 +75,10 @@ void main()
 
 	cout << "비트캠프의 총학생수는 " <<
 		Bitcamp::getBitcampStudentCnt()
+		//bitSeomyun.getBitcampStudentCnt()
 		<< " 입니다" << endl;
 
-	cout << "비트캠프의 총학생수는 " <<
-		bitSeomyun.getSumStudentCnt()
-		<< " 입니다" << endl;
+	//cout << "비트캠프의 총학생수는 " <<
+	//	bitSeomyun.getSumStudentCnt()
+	//	<< " 입니다" << endl;
 }

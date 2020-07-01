@@ -6,7 +6,7 @@
    객체간에 공유해서 사용하게 된다.
 
    단. st0.showInfo()를 호출할 때는 st0의 name과 age를 출력
-       st1.showInfo()를 호출할 때는 st1의 name과 age를 출력
+	   st1.showInfo()를 호출할 때는 st1의 name과 age를 출력
 */
 #include <iostream>
 
@@ -18,15 +18,15 @@ private:
 	string name;
 	int age;
 public:
-	Student(string _name, int _age)
+	Student(string name, int age)
 	{
-		name = _name;
-		age = _age;
+		this->name = name;
+		this->age = age;
 	}
 	void showInfo()
 	{
-		cout << "이름 : " << name << endl;
-		cout << "나이 : " << age << endl;
+		cout << "이름 : " << this->name << endl;
+		cout << "나이 : " << this->age << endl;
 	}
 };
 
