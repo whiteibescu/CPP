@@ -3,7 +3,7 @@ class Gun
 {
 private:
 	int bullet = 10;
-public:
+protected:
 	void bbang();
 };
 
