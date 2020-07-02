@@ -1,6 +1,4 @@
-
-5. Accumulator 클래스를 구현하세요.
-
+//5. Accumulator 클래스를 구현하세요.
 
 #include <iostream>
 using namespace std;
@@ -8,13 +6,13 @@ using namespace std;
 class Accumulator {
 	int value;
 public:
-	Accumulator(int value);
-	Accumulator& add(int n);
-	int get();
+	Accumulator(int value) { this->value = value; }
+	Accumulator& add(int n) { value += n; return *this; }
+	int get() { return value; }
 };
-;
+
 int main() {
 	Accumulator acc(10);
-	acc.add(5).add(6).add(7); // acc의 value 멤버가 28이 된다.
-	cout << acc.get() << endl; // 28 출력
+	acc.add(5).add(6).add(7);
+	cout << acc.get() << endl;
 }
