@@ -15,54 +15,33 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="basic1.cpp">
+    <ClCompile Include="ForcePolice.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="basic2.cpp">
+    <ClCompile Include="Gun.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="basic3-main.cpp">
+    <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="basic3-cpp.cpp">
+    <ClCompile Include="NursePolice.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="middle1.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="middle2.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="advance1.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="advance2.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="advance3.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="advance4.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="advance5.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="advance6.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="middle3-cpp.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="middle3-main.cpp">
+    <ClCompile Include="Police.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="basic3-Header.h">
+    <ClInclude Include="ForcePolice.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="middle3-Header.h">
+    <ClInclude Include="Gun.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NursePolice.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Police.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
