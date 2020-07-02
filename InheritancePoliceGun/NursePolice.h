@@ -1,6 +1,6 @@
 #pragma once
 #include "Police.h"
-class ForcePolice :
+class NursePolice :
     public Police
 {
 };
