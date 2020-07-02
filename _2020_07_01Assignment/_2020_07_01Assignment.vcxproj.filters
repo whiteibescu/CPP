@@ -33,9 +33,6 @@
     <ClCompile Include="middle2.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="middle3.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="advance1.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -54,9 +51,18 @@
     <ClCompile Include="advance6.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="middle3-cpp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="middle3-main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="basic3-Header.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="middle3-Header.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
