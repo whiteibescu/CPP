@@ -10,10 +10,8 @@ protected:
 	int age;
 
 public:
-	Human(string name = "사람", int age = 0) {
-		this->name = name;
-		this->age = age;
-	}
+	Human(string name = "사람", int age = 0);
+	~Human();
 
 public:
 	void eat();

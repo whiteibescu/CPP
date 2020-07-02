@@ -5,17 +5,21 @@ Human::Human(string name, int age) {
 	this->age = age;
 	cout << "Human 생성자 호출" << endl;
 }
+Human::~Human()
+{
+	cout << "Human 소멸자 호출" << endl;
+}
 void Human::eat()
 {
-	cout << this->name << "은 밥을 먹는다:" << endl;
+	cout << this->name << "은 밥을 먹는다" << endl;
 }
 void Human::sleep()
 {
-	cout << this->name << "은 잠을 잔다:" << endl;
+	cout << this->name << "은 잠을 잔다" << endl;
 }
 void Human::work()
 {
-	cout << this->name << "은 일을 한다:" << endl;
+	cout << this->name << "은 일을 한다" << endl;
 }
 void Human::info()
 {
