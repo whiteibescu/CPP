@@ -21,7 +21,7 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{B683466B-EC93-4AD0-8C3D-1D1991FF07A6}</ProjectGuid>
+    <ProjectGuid>{fe80a692-a680-4061-883b-7bd1a1d7a540}</ProjectGuid>
     <RootNamespace>InheritancePoliceGun</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
@@ -141,7 +141,6 @@
   <ItemGroup>
     <ClCompile Include="ForcePolice.cpp" />
     <ClCompile Include="Gun.cpp" />
-    <ClCompile Include="main.cpp" />
     <ClCompile Include="NursePolice.cpp" />
     <ClCompile Include="Police.cpp" />
   </ItemGroup>
@@ -150,10 +149,6 @@
     <ClInclude Include="Gun.h" />
     <ClInclude Include="NursePolice.h" />
     <ClInclude Include="Police.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="ClassDiagram.cd" />
-    <None Include="ClassDiagram1.cd" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
