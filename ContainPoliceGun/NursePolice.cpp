@@ -7,7 +7,7 @@ void NursePolice::measureTemperature()
 	{
 		cnt++;
 		if (cnt > 3)
-			bbang();
+			cout << "get Out!!!" << endl;
 		else
 			cout << "No!" << endl;
 

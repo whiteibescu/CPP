@@ -12,5 +12,5 @@ void ForcePolice::snap()
 
 void ForcePolice::fireGun()
 {
-	bbang();
+	gun.bbang();
 }
