@@ -8,41 +8,48 @@
 
 #include <iostream>
 #include <cstdlib>
-#include <ctime> 
-
+#include <ctime>
+#include <string>
 using namespace std;
 
-// 임의의 정수를 랜덤하게 제공하는 클래스
-class Random {
+class SelectableRandom {
+	string s;
 public:
-	Random(); // 생성자. 랜덤 seed를 설정한다.
-	int next(); // 랜던 정수를 리턴한다.
-	int nextInRange(int low, int high); // low와 high 사이의 랜덤 정수를 리턴한다.
+	SelectableRandom(string s) { this->s = s; srand((unsigned)time(0)); }
+	int next();
+	int nextInRange(int a, int b);
+	string getstr() { return s; }
 };
-
-Random::Random() {
-	srand((unsigned)time(0)); // 임의의 seed를 설정하여 할 때마다 다른 랜덤 수가 나오게 한다.
+int SelectableRandom::next() {
+	int n = rand();
+	if (s == "홀수")
+		while (n % 2 == 0) n = rand();
+	else if (s == "짝수")
+		while (n % 2 == 1) n = rand();
+	return n;
 }
-
-int Random::next() {
-	return rand(); // 0에서 RAND_MAX 사이의 랜덤한 정수 리턴
-}
-
-int Random::nextInRange(int low, int high) {
-	int range = (high - low) + 1;
-	return low + (rand() % range); // low와 high 사이의 랜덤 정수를 리턴한다. 
+int SelectableRandom::nextInRange(int a, int b) {
+	int n;
+	n = a + (rand() % (b - a + 1));
+	if (s == "홀수")
+		while (n % 2 == 0) n = a + (rand() % (b - a + 1));
+	else if (s == "짝수")
+		while (n % 2 == 1) n = a + (rand() % (b - a + 1));
+	return n;
 }
 
 int main() {
-	Random r;
-	cout << "-- 0에서 " << RAND_MAX << "까지의 랜덤 정수 10 개--" << endl;
+	SelectableRandom r("짝수");
+	SelectableRandom rr("홀수");
+
+	cout << "-- 0에서 " << RAND_MAX << "까지의 " << r.getstr() << " 랜덤 정수 10 개--" << endl;
 	for (int i = 0; i < 10; i++) {
-		int n = r.next(); // 0에서 RAND_MAX(32767) 사이의 랜덤한 정수
+		int n = r.next();
 		cout << n << ' ';
 	}
-	cout << endl << endl << "-- 2에서 " << "4 까지의 랜덤 정수 10 개 --" << endl;
+	cout << endl << endl << "-- 2에서 " << "9 까지의 랜덤 " << rr.getstr() << " 정수 10 개 --" << endl;
 	for (int i = 0; i < 10; i++) {
-		int n = r.nextInRange(2, 4); // 2에서 4 사이의 랜덤한 정수
+		int n = rr.nextInRange(2, 9);
 		cout << n << ' ';
 	}
 	cout << endl;
