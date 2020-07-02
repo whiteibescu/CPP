@@ -17,34 +17,30 @@ private:
 	int age;
 
 public:
-	// 변수에 대한 getter/setter 함수
-	string getName()
-	{
-		return this->name;
-	}
-	void setName(string name)
-	{
+	Student(string name="", string address="", int age=0) {
 		this->name = name;
+		this->address = address;
+		this->age = age;
 	}
 
-	void setName(string name)
-	{
+public:
+	// 변수에 대한 getter/setter 함수
+	string getName() {
+		return this->name;
+	}
+	void setName(string name) {
 		this->name = name;
 	}
-	string getAddress()
-	{
+	string getAddress() {
 		return this->address;
 	}
-	void setAddress(string address)
-	{
+	void setAddress(string address) {
 		this->address = address;
 	}
-	int getAge()
-	{
+	int getAge() {
 		return this->age;
 	}
-	void setAge(int age)
-	{
+	void setAge(int age) {
 		this->age = age;
 	}
 };
@@ -55,4 +51,14 @@ void main()
 	st.setName("홍길동");
 	st.setAddress("지리산");
 	st.setAge(24);
+	cout << st.getName() << ":" <<
+		st.getAddress() << ":" <<
+		st.getAge() << endl;
+
+	cout << endl;
+
+	Student st1("임꺽정", "구월산", 33);
+	cout << st1.getName() << ":" <<
+		st1.getAddress() << ":" <<
+		st1.getAge() << endl;
 }
