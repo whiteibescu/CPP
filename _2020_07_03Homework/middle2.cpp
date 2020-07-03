@@ -5,7 +5,6 @@
    각각 짝수 10개, 홀수 10개를 랜덤하게 발생시키는 프로그램을 작성하세요.
 */
 
-
 #include <iostream>
 #include <cstdlib>
 #include <ctime>
