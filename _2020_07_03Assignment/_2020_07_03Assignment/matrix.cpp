@@ -7,6 +7,7 @@
 #define UP 72
 #define DOWN 80
 #define ESC 27
+#define COLOR 49
 
 struct Signal
 {
@@ -22,25 +23,34 @@ struct Signal S[MAX];
 
 void main()
 {	
-	setcursortype(NOCURSOR);			//커서 없애기
-	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 2); //콘솔창 폰트 색상 초록색
+	setcursortype(NOCURSOR);	//커서 없애기
 	int i;
 	int ch;
 	int freq = 15;
 	int frame = 200;
 
 	clrscr();
-	gotoxy(0, 23);
-	printf("매트릭스 흉내내기. 상하:속도 증감, 좌우:빈도 증감, ESC:종료");
-	randomize(); // srand((unsigned)time(NULL)); 
+
+	randomize();			// srand((unsigned)time(NULL)); 
 	for (;;) {   
-		gotoxy(60, 23);
+
+		gotoxy(0, 25);
+		printf("----------------------------------------------------------------------------------\n");
+		printf("\\    /\\                            \\    /\\                            \\    /\\\n");      
+		printf(" )  ( \')                            )  ( \')                            )  ( \')\n");
+		printf("(  /  )                            (  /  )                            (  /  )\n");
+		printf(" \\(__)|                             \\(__)|                             \\(__)|");
+		gotoxy(60, 23);-
 		printf("속도:%d, 빈도:%d    ", frame, freq);
+		gotoxy(0, 23);
+		printf("1번: 색상 변경 상하:속도 증감, 좌우:빈도 증감, ESC:종료");
 
 		// 키 입력 처리
-		if (kbhit()) {
+		if (kbhit()) { //특수키는 2바이트
 			ch = getch();
-			if (ch == 0xE0) {
+			if (ch == 49)
+			SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), (rand() % 14) + 1); //콘솔창 폰트 색상 초록색
+			if (ch == 0xE0) { //특수키
 				ch = getch();
 				switch (ch) {
 				case UP:
@@ -59,13 +69,21 @@ void main()
 			}
 			else {
 				if (ch == ESC) {
-					return;
+					clrscr();
+
+					printf("|\\_/|\n");
+					printf("|q p|   /}\n");
+					printf("( 0 )\"\"\"\\\n");
+					printf("|\"^\"`    |\n");
+					printf("||_/=\\\\__|");
+
+					break;
 				}
 			}
 		}
 
 		// 새로운 신호 생성
-		int count = 0;
+		int count = 0; 
 		if (random(freq) == 0) {
 			int x = random(80);
 			int this_distance = random(14) + 9;
@@ -79,7 +97,7 @@ void main()
 					// S[i].distance = random(14) + 9;
 					S[i].distance = this_distance;
 					// S[i].nFrame = S[i].nStay = random(15) + 5;
-					S[i].nFrame = S[i].nStay = count + 5;
+					S[i].nFrame = S[i].nStay = count  + 5;
 					count++;
 				}
 				if (count == 15)
@@ -102,7 +120,6 @@ void main()
 				}
 			}
 		}
-
 		delay(500 / frame);
 	}
 }
