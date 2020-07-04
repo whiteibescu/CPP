@@ -24,7 +24,7 @@ void main()
 {
     int i;
     int ch;
-    int freq = 80;
+    int freq = 30;
     int frame = 500;
 
     clrscr();  //화면 청소

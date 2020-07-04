@@ -48,7 +48,7 @@ void main()
 		// 키 입력 처리
 		if (kbhit()) { //특수키는 2바이트
 			ch = getch();
-			if (ch == 49)
+			if (ch == COLOR)
 			SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), (rand() % 14) + 1); //콘솔창 폰트 색상 초록색
 			if (ch == 0xE0) { //특수키
 				ch = getch();
