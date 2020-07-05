@@ -97,7 +97,7 @@ void main()
     }
 }
 
-/*
+/* 프로젝트
 // 주기가 다 된 신호 이동 및 제거 처리
 for (i=0;i<MAX;i++) {
    if (S[i].exist == FALSE)
