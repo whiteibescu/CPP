@@ -5,13 +5,13 @@ using namespace std;
 
 void Marine::move()
 {
-	cout << "Àú¹÷Àú¹÷--" << endl;
+	cout << "Marine:Àú¹÷Àú¹÷--" << endl;
 }
 void Marine::attack()
 {
-	cout << "µÎµÎµÎ--" << endl;
+	cout << "Marine:µÎµÎµÎ--" << endl;
 }
 void Marine::die()
 {
-	cout << "À¸¾Ç--" << endl;
+	cout << "Marine:À¸¾Ç--" << endl;
 }

@@ -5,13 +5,13 @@ using namespace std;
 
 void Hydra::move()
 {
-	cout << "ÁúÁú&&&" << endl;
+	cout << "Hydra:ÁúÁú&&&" << endl;
 }
 void Hydra::attack()
 {
-	cout << "¹Æ¡¹&&&" << endl;
+	cout << "Hydra:¹Æ¡¹&&&" << endl;
 }
 void Hydra::die()
 {
-	cout << "Å©¾Æ¾Ç&&&" << endl;
+	cout << "Hydra:Å©¾Æ¾Ç&&&" << endl;
 }

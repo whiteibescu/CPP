@@ -5,13 +5,13 @@ using namespace std;
 
 void Scv::move()
 {
-	cout << "À§ÀÌÀ×~" << endl;
+	cout << "SCV:À§ÀÌÀ×~" << endl;
 }
 void Scv::attack()
 {
-	cout << "Â¡ÁöÂ¡~" << endl;
+	cout << "SCV:Â¡ÁöÂ¡~" << endl;
 }
 void Scv::die()
 {
-	cout << "Æã~" << endl;
+	cout << "SCV:Æã~" << endl;
 }
