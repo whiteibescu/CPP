@@ -7,6 +7,8 @@ void DailyEmployee::inputEmployee()
 	cin >> this->perTimePay;
 	cout << "일한 시간 입력: ";
 	cin >> this->workHour;
+
+	DailyEmployee::showEmployee();
 }
 void DailyEmployee::showEmployee()
 {

@@ -7,7 +7,7 @@ class EmployeeManager
 {
 private:
 	Employee* employee[EMP_NUM];
-	int empNum;
+	int empNum = 0;
 
 public:
 	void showMenu();
