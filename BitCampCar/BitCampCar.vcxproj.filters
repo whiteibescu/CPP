@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="현대">
+      <UniqueIdentifier>{8daed5de-8bda-48a4-9465-749a9d003c9b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="기아">
+      <UniqueIdentifier>{45db90e1-bf3c-42a4-9829-7979aae6348e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="도요타">
+      <UniqueIdentifier>{917d331b-9980-461f-8c63-46272e19e5f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="스펙">
+      <UniqueIdentifier>{b42ac48b-6c77-4181-b7bd-b88876c0ba28}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="테스터SW">
+      <UniqueIdentifier>{e0ebded6-3b96-4203-83e1-6fca8c8af2ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="벤츠">
+      <UniqueIdentifier>{4c972876-af4b-4651-a8b5-81055a7192fb}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ICar.h">
+      <Filter>스펙</Filter>
+    </ClInclude>
+    <ClInclude Include="HyundaiCar.h" />
+    <ClInclude Include="KiaCar.h">
+      <Filter>기아</Filter>
+    </ClInclude>
+    <ClInclude Include="ToyotaCar.h">
+      <Filter>도요타</Filter>
+    </ClInclude>
+    <ClInclude Include="CarTester.h">
+      <Filter>테스터SW</Filter>
+    </ClInclude>
+    <ClInclude Include="BenzCar.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="HyundaiCar.cpp" />
+    <ClCompile Include="KiaCar.cpp">
+      <Filter>기아</Filter>
+    </ClCompile>
+    <ClCompile Include="ToyotaCar.cpp">
+      <Filter>도요타</Filter>
+    </ClCompile>
+    <ClCompile Include="CarTester.cpp">
+      <Filter>테스터SW</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>테스터SW</Filter>
+    </ClCompile>
+    <ClCompile Include="BenzCar.cpp">
+      <Filter>벤츠</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
