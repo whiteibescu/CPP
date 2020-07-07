@@ -144,7 +144,6 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Marine.cpp" />
     <ClCompile Include="Scv.cpp" />
-    <ClCompile Include="StarUnit.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="FireSoldier.h" />

@@ -30,9 +30,6 @@
     <ClCompile Include="Scv.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="StarUnit.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="FireSoldier.h">
