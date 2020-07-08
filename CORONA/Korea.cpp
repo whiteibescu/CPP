@@ -26,6 +26,8 @@ void Korea::infectee()
 
 int Korea::getMask_NUM()
 {
+	maskQuantity();
+	cout << "getMask_NUM" << Mask << endl;
 	return this->Mask;
 }
 int Korea::getInfected_NUM() 

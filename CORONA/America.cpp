@@ -27,6 +27,8 @@ void America::infectee()
 
 int America::getMask_NUM()
 {
+	maskQuantity();
+	cout << "getMask_NUM" << Mask << endl;
 	return this->Mask;
 }
 

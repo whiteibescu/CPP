@@ -17,7 +17,7 @@ interface Corona
 	int Mask;
 	int Infected;
 	string CountryName;
-
+	
 	virtual void maskQuantity() = 0;
 	virtual void infectee() = 0;
 	virtual int getMask_NUM() = 0;
