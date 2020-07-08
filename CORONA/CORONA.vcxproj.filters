@@ -1,45 +1,62 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Source Files">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;c++;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    <Filter Include="America">
+      <UniqueIdentifier>{8049006f-e7a1-4542-bf95-c2305bb8b862}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    <Filter Include="China">
+      <UniqueIdentifier>{2e6f4ffc-7541-4e14-8027-17e861e1b60f}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Resource Files">
+    <Filter Include="Korea">
+      <UniqueIdentifier>{1a162918-dbb8-4a49-939a-04b8bdfe650a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Corona">
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="main">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="StatusBoard">
+      <UniqueIdentifier>{da81f8f6-b171-423a-bf98-83c79c3b7df9}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="China.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Korea.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Korea</Filter>
     </ClCompile>
-    <ClCompile Include="main.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="China.cpp">
+      <Filter>China</Filter>
     </ClCompile>
     <ClCompile Include="America.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>America</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>main</Filter>
+    </ClCompile>
+    <ClCompile Include="StatusBoard.cpp">
+      <Filter>StatusBoard</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Korea.h">
+      <Filter>Korea</Filter>
+    </ClInclude>
     <ClInclude Include="Corona.h">
-      <Filter>Header Files</Filter>
+      <Filter>Corona</Filter>
     </ClInclude>
     <ClInclude Include="China.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Korea.h">
-      <Filter>Header Files</Filter>
+      <Filter>China</Filter>
     </ClInclude>
     <ClInclude Include="America.h">
-      <Filter>Header Files</Filter>
+      <Filter>America</Filter>
+    </ClInclude>
+    <ClInclude Include="StatusBoard.h">
+      <Filter>StatusBoard</Filter>
+    </ClInclude>
+    <ClInclude Include="turboc.h">
+      <Filter>StatusBoard</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

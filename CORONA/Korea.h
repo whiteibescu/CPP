@@ -9,10 +9,13 @@
 class Korea :
     public Corona
 {
+
 public:
     Korea();
     virtual void maskQuantity();
     virtual void infectee();
+    virtual int getMask_NUM();
+    virtual int getInfected_NUM();
 
 };
 

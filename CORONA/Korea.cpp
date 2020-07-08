@@ -7,6 +7,7 @@ Korea::Korea()
 	this->Population = 200;
 	this->Mask = 50;
 	this->Infected = 0;
+	this->CountryName = "Korea";
 }
 
 void Korea::maskQuantity()
@@ -21,5 +22,14 @@ void Korea::infectee()
 	int num = rand() % K_COUNTRY_INFECTEE_NUM + K_BASIC_INFECTEE_NUM;
 	this->Infected += num;
 	
+}
+
+int Korea::getMask_NUM()
+{
+	return this->Mask;
+}
+int Korea::getInfected_NUM() 
+{
+	return this->Infected;
 }
 

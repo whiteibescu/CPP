@@ -6,17 +6,25 @@ China::China()
 	this->Population = 1000;
 	this->Mask = 100;
 	this->Infected = 0;
+	this->CountryName = "China";
 }
 
 void China::maskQuantity()
 {
 	int num = rand() % C_COUNTRY_MASK_NUM + C_BASIC_MASK_NUM;
 	this->Mask += num;
-	cout << this->Mask << endl;
-
 }
 void China::infectee()
 {
 	int num = rand() % C_COUNTRY_INFECTEE_NUM + C_BASIC_INFECTEE_NUM;
 	this->Infected += num;
+}
+
+int China::getMask_NUM()
+{	
+	return this->Mask;
+}
+int China::getInfected_NUM()
+{
+	return this->Infected;
 }

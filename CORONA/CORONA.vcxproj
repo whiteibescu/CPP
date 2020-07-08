@@ -23,12 +23,15 @@
     <ClCompile Include="China.cpp" />
     <ClCompile Include="Korea.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="StatusBoard.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="America.h" />
     <ClInclude Include="China.h" />
     <ClInclude Include="Corona.h" />
     <ClInclude Include="Korea.h" />
+    <ClInclude Include="StatusBoard.h" />
+    <ClInclude Include="turboc.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
