@@ -3,8 +3,8 @@
 China::China()
 {
 	srand((unsigned int)time(NULL));//턴마다 난수생성
-	this->Population = 1000;
-	this->Mask = 100;
+	this->Population = 700;
+	this->Mask = 0;
 	this->Infected = 0;
 	this->CountryName = "China";
 }
@@ -29,4 +29,11 @@ int China::getInfected_NUM()
 {
 	infectee();
 	return this->Infected;
+}
+
+int China::getSavedPopulation()
+{
+	int result;
+	result = getInfected_NUM() - getMask_NUM();
+	return result;
 }

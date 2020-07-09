@@ -4,8 +4,8 @@
 America::America()
 {
 	srand((unsigned int)time(NULL));//턴마다 난수생성
-	this->Population = 200;
-	this->Mask = 50;
+	this->Population = 300;
+	this->Mask = 0;
 	this->Infected = 0;
 	this->CountryName = "America";
 }
@@ -34,4 +34,11 @@ int America::getInfected_NUM()
 {
 	infectee();
 	return this->Infected;
+}
+
+int America::getSavedPopulation()
+{
+	int result;
+	result = getInfected_NUM() - getMask_NUM();
+	return result;
 }
