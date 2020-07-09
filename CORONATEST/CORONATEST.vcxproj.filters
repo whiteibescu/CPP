@@ -14,4 +14,44 @@
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="America.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="China.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Corona.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Korea.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StatusBoard.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="turboc.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="America.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="China.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Korea.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StatusBoard.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="turboc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
 </Project>
