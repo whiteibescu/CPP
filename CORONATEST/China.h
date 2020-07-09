@@ -3,7 +3,7 @@
 
 #define C_BASIC_MASK_NUM 10
 #define C_COUNTRY_MASK_NUM 100
-#define C_BASIC_INFECTEE_NUM 15
+#define C_BASIC_INFECTEE_NUM 500
 #define C_COUNTRY_INFECTEE_NUM 200
 
 class China :public Corona
