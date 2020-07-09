@@ -21,18 +21,17 @@ void America::infectee()
 {
 	int num = rand() % A_COUNTRY_INFECTEE_NUM + A_BASIC_INFECTEE_NUM;
 	this->Infected += num;
-	
 
 }
 
 int America::getMask_NUM()
 {
 	maskQuantity();
-	cout << "getMask_NUM" << Mask << endl;
 	return this->Mask;
 }
 
 int America::getInfected_NUM()
 {
+	infectee();
 	return this->Infected;
 }

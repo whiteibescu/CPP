@@ -12,9 +12,7 @@ China::China()
 void China::maskQuantity()
 {
 	int num = rand() % C_COUNTRY_MASK_NUM + C_BASIC_MASK_NUM;
-	cout << "maskQuantity num" << num << endl;
 	this->Mask += num;
-	cout << "maskQuantity Mask" << Mask << endl;
 }
 void China::infectee()
 {
@@ -25,10 +23,10 @@ void China::infectee()
 int China::getMask_NUM()
 {	
 	maskQuantity();
-	cout << "getMask_NUM" << Mask << endl;
 	return this->Mask;
 }
 int China::getInfected_NUM()
 {
+	infectee();
 	return this->Infected;
 }

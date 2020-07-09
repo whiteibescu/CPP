@@ -24,16 +24,18 @@ void StatusBoard::statusInfectee()
 	cout << result << endl;
 }
 
-void StatusBoard::totalStatus()
+void StatusBoard::totalStatus(int left, int top)
 {
 
 	//statusMask();
-	//statusInfectee();	
-	cout << "<" << this->corona->CountryName << ">" << endl;
-	cout << "인구  ==> " << this->corona->Population << endl;
-	cout << "감염자==>" << this->corona->Infected << endl;
-	cout << "생존자==>" << (this->corona->Population) - this->corona->Infected << endl;	
-	cout << "마스크==>" << this->corona->Mask << endl;
+	//statusInfectee();
+	
+	gotoxy(left, top);  cout << "<" << this->corona->CountryName << ">" << endl;
+	gotoxy(left, top+1);  cout << "인구  ==> " << this->corona->Population << endl;
+	gotoxy(left, top+2);  cout << "감염자==>" << this->corona->Infected << endl;
+	gotoxy(left, top+3);  cout << "생존자==>" << (this->corona->Population) - this->corona->Infected << endl;
+	gotoxy(left, top + 4);  cout << "마스크==>" << this->corona->Mask << endl;
+	//gotoxy(left, top + 5);  cout << "MASK==>" << this->corona->getMask_NUM();
 }
 
 void StatusBoard::setCorona(Corona* pcorona)

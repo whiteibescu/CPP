@@ -24,6 +24,7 @@
     <ClCompile Include="Korea.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="StatusBoard.cpp" />
+    <ClCompile Include="turboc.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="America.h" />

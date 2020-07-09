@@ -38,6 +38,9 @@
     <ClCompile Include="StatusBoard.cpp">
       <Filter>StatusBoard</Filter>
     </ClCompile>
+    <ClCompile Include="turboc.cpp">
+      <Filter>StatusBoard</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Korea.h">

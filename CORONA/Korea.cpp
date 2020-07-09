@@ -6,7 +6,7 @@ Korea::Korea()
 	srand((unsigned int)time(NULL));//턴마다 난수생성
 	this->Population = 200;
 	this->Mask = 50;
-	this->Infected = 0;
+	this->Infected = 100;
 	this->CountryName = "Korea";
 }
 
@@ -14,7 +14,6 @@ void Korea::maskQuantity()
 {
 	int num = rand() % K_COUNTRY_MASK_NUM + K_BASIC_MASK_NUM;
 	this->Mask += num;
-	cout << this->Mask << endl;
 	
 }
 void Korea::infectee()
@@ -27,11 +26,11 @@ void Korea::infectee()
 int Korea::getMask_NUM()
 {
 	maskQuantity();
-	cout << "getMask_NUM" << Mask << endl;
 	return this->Mask;
 }
 int Korea::getInfected_NUM() 
 {
+	infectee();
 	return this->Infected;
 }
 
