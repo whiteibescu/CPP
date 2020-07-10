@@ -14,23 +14,25 @@ int g_cnt = 0;
 
 #define END_NUM 3
 using namespace std; 
+#define LEFT 10
+#define TOP 8
 
 void CountrySelectAddMask(Corona** pcorona, int len, int sel, int m)
 {
-	int left = 10;
+	//int left = 10;
 	/*int result = 0;
 	result = m;
 	pcorona[sel - 1]->Mask += result;*/
-	StatusBoard statusboard;
+	//StatusBoard statusboard;
 	pcorona[sel - 1]->Infected = pcorona[sel - 1]->Infected - m;
-	for (int i = 0; i < END_NUM; ++i)
-	{
-		//감염자 = 새로생긴 감염자 + 기존감염자
-
-		statusboard.setCorona(pcorona[i]);
-		statusboard.TotalStatus(10, 8);
-		left += 20;
-	}
+	//for (int i = 0; i < END_NUM; ++i)
+	//{
+	//	//감염자 = 새로생긴 감염자 + 기존감염자
+	//
+	//	statusboard.setCorona(pcorona[i]);
+	//	statusboard.TotalStatus(10, 8);
+	//	left += 20;
+	//}
 
 	gotoxy(10, 16);
 	cout << "마스크가 " << pcorona[sel - 1]->CountryName << " 에게 " << m << "개" << "지급되었습니다" << endl;
@@ -151,15 +153,14 @@ void main()
 		default:
 			cout << "잘못 입력 하셨습니다!!" << endl;
 		}
-		left = 10;
-		top = 8;
-		for (int i = 0; i < END_NUM; i++)
-		{
 
-			statusboard.TotalStatus1(left, top, x);
-			left += 20;
-		}
-		delay(1000);
+		//for (int i = 0; i < END_NUM; i++)
+		//{
+
+		//	statusboard.TotalStatus1(LEFT, TOP, x);
+		//	left += 20;
+		//}
+		//delay(1000);
 		
 
 		g_cnt++;

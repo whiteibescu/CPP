@@ -13,10 +13,11 @@ public:
 	int statusMask();							// 
 	void statusInfectee();
 	void dangerLevel();
+	void dangerLevelBar();
 	
 public:
 	void TotalStatus(int left, int top);
-	void TotalStatus1(int left, int top,int x);
+	//void TotalStatus1(int left, int top,int x);
 	void setCorona(Corona* pcorona);	
 	
 };
