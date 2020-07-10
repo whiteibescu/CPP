@@ -115,7 +115,7 @@ void main()
 			statusboard.setCorona(arrcorona[i]);
 			/*statusboard.beforeTotalStatus(left, top);*/
 			
-			statusboard.afterTotalStatus(left, top);	
+			statusboard.TotalStatus(left, top);	
 			left += 20;
 		}
 
@@ -133,8 +133,7 @@ void main()
 		cout << "어느 나라에게 지급하겠습니까?" << endl;
 		cout << "1.[ 중국 ] 2.[ 한국 ] 3.[ 미국 ]" << endl;
 		cin >> sel;
-		getchar();
-		getchar();
+
 		switch (sel)
 		{
 		case 1:			

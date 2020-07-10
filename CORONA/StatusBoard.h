@@ -4,7 +4,6 @@
 class StatusBoard
 {
 private:
-	//int newInfected;
 	Corona* corona = NULL;
 public:
 	StatusBoard(Corona* pcorona = NULL);
@@ -14,9 +13,7 @@ private:
 	void statusInfectee();
 	
 public:
-	void beforeTotalStatus(int left, int top);
-	void afterTotalStatus(int left, int top);	
+	void TotalStatus(int left, int top);	
 	void setCorona(Corona* pcorona);
-
 };
 

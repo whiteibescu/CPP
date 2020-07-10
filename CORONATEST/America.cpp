@@ -20,7 +20,7 @@ void America::maskQuantity()
 void America::infectee()
 {
 	int num = rand() % A_COUNTRY_INFECTEE_NUM + A_BASIC_INFECTEE_NUM;
-	this->Infected += num;
+	this->Infected = num;
 
 }
 

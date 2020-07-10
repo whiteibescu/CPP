@@ -10,11 +10,11 @@ public:
 	StatusBoard(Corona* pcorona = NULL);
 
 private:
-	
+	void statusInfectee();
 public:
-	void firstTotalStatus(int left, int top);
+	//void firstTotalStatus(int left, int top);
 	void TotalStatus(int left, int top);
 	void setCorona(Corona* pcorona);
-	void Temp();
+	//void Temp();
 };
 

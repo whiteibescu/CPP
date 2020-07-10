@@ -113,15 +113,7 @@ void main()
 		{
 			
 			statusboard.setCorona(arrcorona[i]);
-			if(g_cnt == 0)
-			{
-				statusboard.firstTotalStatus(left, top);
-			}
-			else
-			{
-				statusboard.TotalStatus(left, top);
-			}
-			
+			statusboard.TotalStatus(left, top);		
 				
 			left += 20;
 		}
