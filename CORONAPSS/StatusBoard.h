@@ -12,6 +12,7 @@ private:
 	void statusMask();
 	void statusInfectee();
 	void dangerLevel();
+	void dangerLevelBar();
 public:
 	void TotalStatus(int left, int top);	
 	void setCorona(Corona* pcorona);
