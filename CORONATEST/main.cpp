@@ -84,7 +84,7 @@ void startCoronaVirus()
 
 void main()
 {
-
+	
 	int sel;
 	//int cnt = 0;
 	int x = 30;
@@ -113,9 +113,16 @@ void main()
 		{
 			
 			statusboard.setCorona(arrcorona[i]);
-			/*statusboard.beforeTotalStatus(left, top);*/
+			if(g_cnt == 0)
+			{
+				statusboard.firstTotalStatus(left, top);
+			}
+			else
+			{
+				statusboard.TotalStatus(left, top);
+			}
 			
-			statusboard.afterTotalStatus(left, top);	
+				
 			left += 20;
 		}
 
@@ -125,7 +132,7 @@ void main()
 			gotoxy(0, 23);
 			exit(0);
 		}
-
+		gotoxy(0, 15);
 		int m = getMask();
 		cout << "\n\n\n" << endl;
 		cout << "================================================================" << endl;
@@ -133,8 +140,7 @@ void main()
 		cout << "어느 나라에게 지급하겠습니까?" << endl;
 		cout << "1.[ 중국 ] 2.[ 한국 ] 3.[ 미국 ]" << endl;
 		cin >> sel;
-		getchar();
-		getchar();
+		
 		switch (sel)
 		{
 		case 1:			

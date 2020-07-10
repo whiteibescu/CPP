@@ -18,27 +18,11 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="America.cpp" />
-    <ClCompile Include="China.cpp" />
-    <ClCompile Include="Korea.cpp" />
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="StatusBoard.cpp" />
-    <ClCompile Include="turboc.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="America.h" />
-    <ClInclude Include="China.h" />
-    <ClInclude Include="Corona.h" />
-    <ClInclude Include="Korea.h" />
-    <ClInclude Include="StatusBoard.h" />
-    <ClInclude Include="turboc.h" />
-  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{3ee05be3-63fc-4202-9576-066e6011304f}</ProjectGuid>
-    <RootNamespace>CORONA</RootNamespace>
+    <ProjectGuid>{3c315911-90ec-47e8-a7be-5abef94d19a0}</ProjectGuid>
+    <RootNamespace>CORONATEST</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -154,6 +138,22 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="America.h" />
+    <ClInclude Include="China.h" />
+    <ClInclude Include="Corona.h" />
+    <ClInclude Include="Korea.h" />
+    <ClInclude Include="StatusBoard.h" />
+    <ClInclude Include="turboc.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="America.cpp" />
+    <ClCompile Include="China.cpp" />
+    <ClCompile Include="Korea.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="StatusBoard.cpp" />
+    <ClCompile Include="turboc.cpp" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

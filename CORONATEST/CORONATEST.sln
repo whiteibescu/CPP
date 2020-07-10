@@ -1,11 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
-VisualStudioVersion = 16.0.30204.135
+VisualStudioVersion = 16.0.30225.117
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CORONA", "CORONA.vcxproj", "{3EE05BE3-63FC-4202-9576-066E6011304F}"
-EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CORONATEST", "..\CORONATEST\CORONATEST.vcxproj", "{3C315911-90EC-47E8-A7BE-5ABEF94D19A0}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CORONATEST", "CORONATEST.vcxproj", "{3C315911-90EC-47E8-A7BE-5ABEF94D19A0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,14 +13,6 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{3EE05BE3-63FC-4202-9576-066E6011304F}.Debug|x64.ActiveCfg = Debug|x64
-		{3EE05BE3-63FC-4202-9576-066E6011304F}.Debug|x64.Build.0 = Debug|x64
-		{3EE05BE3-63FC-4202-9576-066E6011304F}.Debug|x86.ActiveCfg = Debug|Win32
-		{3EE05BE3-63FC-4202-9576-066E6011304F}.Debug|x86.Build.0 = Debug|Win32
-		{3EE05BE3-63FC-4202-9576-066E6011304F}.Release|x64.ActiveCfg = Release|x64
-		{3EE05BE3-63FC-4202-9576-066E6011304F}.Release|x64.Build.0 = Release|x64
-		{3EE05BE3-63FC-4202-9576-066E6011304F}.Release|x86.ActiveCfg = Release|Win32
-		{3EE05BE3-63FC-4202-9576-066E6011304F}.Release|x86.Build.0 = Release|Win32
 		{3C315911-90EC-47E8-A7BE-5ABEF94D19A0}.Debug|x64.ActiveCfg = Debug|x64
 		{3C315911-90EC-47E8-A7BE-5ABEF94D19A0}.Debug|x64.Build.0 = Debug|x64
 		{3C315911-90EC-47E8-A7BE-5ABEF94D19A0}.Debug|x86.ActiveCfg = Debug|Win32
@@ -36,6 +26,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {F33054F4-C53A-4AEC-8ABF-B8167AC2FAE2}
+		SolutionGuid = {290C0EDB-853F-4411-B61E-86BAA87D5E03}
 	EndGlobalSection
 EndGlobal
