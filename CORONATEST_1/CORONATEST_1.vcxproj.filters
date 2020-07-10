@@ -15,25 +15,42 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="_20_TelInfo.cpp">
+    <ClInclude Include="America.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="China.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Corona.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Korea.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StatusBoard.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="turboc.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="America.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="_21_TelInfo.cpp">
+    <ClCompile Include="China.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="_22_access.cpp">
+    <ClCompile Include="Korea.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="_23_constructor_destructor.cpp">
+    <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="_24_cin_array.cpp">
+    <ClCompile Include="StatusBoard.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="_25_cin_getline.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="_26_string.cpp">
+    <ClCompile Include="turboc.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

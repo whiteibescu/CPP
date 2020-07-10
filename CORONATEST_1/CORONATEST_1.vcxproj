@@ -18,11 +18,27 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="America.h" />
+    <ClInclude Include="China.h" />
+    <ClInclude Include="Corona.h" />
+    <ClInclude Include="Korea.h" />
+    <ClInclude Include="StatusBoard.h" />
+    <ClInclude Include="turboc.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="America.cpp" />
+    <ClCompile Include="China.cpp" />
+    <ClCompile Include="Korea.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="StatusBoard.cpp" />
+    <ClCompile Include="turboc.cpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{f6bc065a-bd88-4b11-8f80-cb27ffe76766}</ProjectGuid>
-    <RootNamespace>My20200629Lecture</RootNamespace>
+    <ProjectGuid>{fb43fb06-7c06-46d3-927c-6f4db89f301d}</ProjectGuid>
+    <RootNamespace>CORONATEST1</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -138,27 +154,6 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="_26_string.cpp" />
-    <ClCompile Include="_20_TelInfo.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="_21_TelInfo.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="_22_access.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="_23_constructor_destructor.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="_24_cin_array.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="_25_cin_getline.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
-    </ClCompile>
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
