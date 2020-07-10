@@ -10,31 +10,31 @@
 #include <windows.h>
 #include "turboc.h"
 
-
-#define START_NUM 150
-#define END_NUM 3
-#define XJUMP_NUM 30
-using namespace std;
-
 int g_cnt = 0;
 
-int getMask()
-{	
-	int num = rand() % START_NUM + XJUMP_NUM;
-	return num;
-}
+#define END_NUM 3
+using namespace std; 
 
-void CountryTotalAddMask(Corona** pcorona, int len, int sel,int m)
+void CountrySelectAddMask(Corona** pcorona, int len, int sel, int m)
 {
-	getchar();
+	int left = 10;
+	/*int result = 0;
+	result = m;
+	pcorona[sel - 1]->Mask += result;*/
+	StatusBoard statusboard;
 	pcorona[sel - 1]->Infected = pcorona[sel - 1]->Infected - m;
-	getchar();
-	cout << "마스크가 " << pcorona[sel - 1]->CountryName << " 에게 " << m << "개" << "지급되었습니다" << endl;
-}
+	for (int i = 0; i < END_NUM; ++i)
+	{
+		//감염자 = 새로생긴 감염자 + 기존감염자
 
-void srandTime()
-{
-		srand((unsigned int)time(NULL));
+		statusboard.setCorona(pcorona[i]);
+		statusboard.TotalStatus(10, 8);
+		left += 20;
+	}
+
+	gotoxy(10, 16);
+	cout << "마스크가 " << pcorona[sel - 1]->CountryName << " 에게 " << m << "개" << "지급되었습니다" << endl;
+	//delay(1000);
 }
 
 void startCoronaVirus()
@@ -86,11 +86,9 @@ void main()
 {
 
 	int sel;
-	//int cnt = 0;
-	int x = 30;
+	
 	Corona* arrcorona[] = { new China(), new Korea(), new America()};
 	StatusBoard statusboard;
-
 
 	/*startCoronaVirus();*/
 	cout << "당신은 UN 사무총장입니다. 코로나가 발병하였습니다. \n"
@@ -108,30 +106,33 @@ void main()
 		int top = 8;
 		gotoxy(1, 7);
 		cout << "<" << g_cnt + 1 << "회차>";
+		
+		if (g_cnt != 0) {
+			gotoxy(10, 7);
+			cout << "밤사이 감염자들이 늘어났습니다." << endl;			
+		}
+		//delay(2000);
+
+
 
 		for (int i = 0; i < END_NUM; ++i)
 		{
+			//감염자 = 새로생긴 감염자 + 기존감염자
 			
 			statusboard.setCorona(arrcorona[i]);
-			/*statusboard.beforeTotalStatus(left, top);*/
-			
 			statusboard.TotalStatus(left, top);	
 			left += 20;
 		}
+
 		if (g_cnt == END_NUM)
 		{
 			gotoxy(0, 23);
 			exit(0);
 		}
-		if (g_cnt != 0) {
-			cout << "밤사이 감염자들이 늘어났습니다." << endl;
-			//감염자 = 새로생긴 감염자 + 기존감염자
-		}
-		
-		int m = getMask();
+		int x = statusboard.statusMask();
 		cout << "\n\n\n" << endl;
 		cout << "================================================================" << endl;
-		cout << "who에서 마스크가 " << m << " 개 지급되었습니다. " << endl;
+		cout << "who에서 마스크가 " << x << " 개 지급되었습니다. " << endl;
 		cout << "어느 나라에게 지급하겠습니까?" << endl;
 		cout << "1.[ 중국 ] 2.[ 한국 ] 3.[ 미국 ]" << endl;
 		cin >> sel;
@@ -139,22 +140,30 @@ void main()
 		switch (sel)
 		{
 		case 1:			
-			CountryTotalAddMask(arrcorona, sizeof(arrcorona) / sizeof(arrcorona[0]), sel,m);
+			CountrySelectAddMask(arrcorona, sizeof(arrcorona) / sizeof(arrcorona[0]), sel, x);
 			break;
 		case 2:
-			CountryTotalAddMask(arrcorona, sizeof(arrcorona) / sizeof(arrcorona[0]), sel, m);
+			CountrySelectAddMask(arrcorona, sizeof(arrcorona) / sizeof(arrcorona[0]), sel, x);
 			break;
 		case 3:
-			CountryTotalAddMask(arrcorona, sizeof(arrcorona) / sizeof(arrcorona[0]), sel, m);
+			CountrySelectAddMask(arrcorona, sizeof(arrcorona) / sizeof(arrcorona[0]), sel, x);
 			break;
 		default:
 			cout << "잘못 입력 하셨습니다!!" << endl;
 		}
+		left = 10;
+		top = 8;
+		for (int i = 0; i < END_NUM; i++)
+		{
+
+			statusboard.TotalStatus1(left, top, x);
+			left += 20;
+		}
+		delay(1000);
 		
+
 		g_cnt++;
 
-
-		//턴생성
 		//delete[];
 	}
 }

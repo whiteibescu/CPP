@@ -9,6 +9,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CORONATEST", "..\CORONATEST
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CORONAPSS", "..\CORONAPSS\CORONAPSS.vcxproj", "{5309F0D7-BC9F-49E0-AA64-3A6539A8DE0B}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CORONAJSJ", "..\CORONAJSJ\CORONAJSJ.vcxproj", "{4AA79EF0-6EF6-4D87-9E10-7B8DCF3ED481}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -41,6 +43,14 @@ Global
 		{5309F0D7-BC9F-49E0-AA64-3A6539A8DE0B}.Release|x64.Build.0 = Release|x64
 		{5309F0D7-BC9F-49E0-AA64-3A6539A8DE0B}.Release|x86.ActiveCfg = Release|Win32
 		{5309F0D7-BC9F-49E0-AA64-3A6539A8DE0B}.Release|x86.Build.0 = Release|Win32
+		{4AA79EF0-6EF6-4D87-9E10-7B8DCF3ED481}.Debug|x64.ActiveCfg = Debug|x64
+		{4AA79EF0-6EF6-4D87-9E10-7B8DCF3ED481}.Debug|x64.Build.0 = Debug|x64
+		{4AA79EF0-6EF6-4D87-9E10-7B8DCF3ED481}.Debug|x86.ActiveCfg = Debug|Win32
+		{4AA79EF0-6EF6-4D87-9E10-7B8DCF3ED481}.Debug|x86.Build.0 = Debug|Win32
+		{4AA79EF0-6EF6-4D87-9E10-7B8DCF3ED481}.Release|x64.ActiveCfg = Release|x64
+		{4AA79EF0-6EF6-4D87-9E10-7B8DCF3ED481}.Release|x64.Build.0 = Release|x64
+		{4AA79EF0-6EF6-4D87-9E10-7B8DCF3ED481}.Release|x86.ActiveCfg = Release|Win32
+		{4AA79EF0-6EF6-4D87-9E10-7B8DCF3ED481}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

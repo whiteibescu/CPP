@@ -22,7 +22,7 @@ interface Corona
 	virtual void infectee() = 0;
 	virtual int getMask_NUM() = 0;
 	virtual int getInfected_NUM() = 0;
-	virtual int getSavedPopulation() = 0;
+	
 };
 
 
