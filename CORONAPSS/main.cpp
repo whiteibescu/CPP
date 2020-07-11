@@ -73,13 +73,9 @@ void startCoronaVirus()
 				Beep(900, 500);
 			}
 		}
-
+	
 	system("cls");
 	system("color 0F");
-
-	cout << "당신은 UN 사무총장입니다. 코로나가 발병하였습니다. \n"
-		"당신의 선택이 앞으로 인류를 좌우 할 것입니다.\n"
-		"앞으로 3번의 기회가 있습니다." << endl;
 }
 
 void main()
@@ -92,7 +88,7 @@ void main()
 	StatusBoard statusboard;
 
 
-	/*startCoronaVirus();*/
+	startCoronaVirus();
 	cout << "당신은 UN 사무총장입니다. 코로나가 발병하였습니다. \n"
 		"각 나라별로 마스크를 생산하고 있지만 역부족입니다.\n"
 		"WHO에서도 마스크를 생산하고 지원할 예정입니다.\n"
@@ -100,6 +96,7 @@ void main()
 		"당신의 선택이 앞으로 인류를 좌우 할 것입니다.\n"	
 		"총 3번 지원해줄 수가 있습니다." << endl;
 	cout << "================================================================" << endl;
+
 	
 
 	while (g_cnt <= END_NUM)

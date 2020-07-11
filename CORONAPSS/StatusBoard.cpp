@@ -2,21 +2,25 @@
 #include "turboc.h"
 
 extern int g_cnt;
- 
+
+
+
+
 void StatusBoard::dangerLevelBar()
 {
 	if ((this->corona->Infected / this->corona->Population) * 100 <= 30)
 	{
-		cout << "【■    】" << endl;
+		cout << "【■ 】" << endl;
 	}
-	else if ((this->corona->Infected / this->corona->Population) * 100 > 30)
+	else if ((this->corona->Infected / this->corona->Population) * 100 > 30 && (this->corona->Infected / this->corona->Population) * 100 < 60)
 	{
-		cout << "【■■    】" << endl;
+		cout << "【■■ 】" << endl;
 	}
 	else if ((this->corona->Infected / this->corona->Population) * 100 > 50)
 	{
-		cout << "【■■■■■ 】" << endl;
+		cout << "【■■■ 】" << endl;
 	}
+
 }
 
 void StatusBoard::dangerLevel()
@@ -30,7 +34,7 @@ void StatusBoard::dangerLevel()
 		cout << "양호" << endl;
 	}
 
-	else if ((this->corona->Infected / this->corona->Population) * 100 > 30)
+	else if ((this->corona->Infected / this->corona->Population) * 100 > 30 && (this->corona->Infected / this->corona->Population) * 100 < 60)
 	{
 		cout << "주의" << endl;
 	}
