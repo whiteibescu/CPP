@@ -19,7 +19,7 @@ void Korea::maskQuantity()
 void Korea::infectee()
 {
 	int num = /*rand() % K_COUNTRY_INFECTEE_NUM +*/ K_BASIC_INFECTEE_NUM;
-	this->Infected = num;
+	this->Infected += num;
 	
 }
 

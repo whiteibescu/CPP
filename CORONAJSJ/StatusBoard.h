@@ -9,13 +9,14 @@ private:
 public:
 	StatusBoard(Corona* pcorona = NULL);		// 
 	int statusinfectee;
-public:
-	int statusMask();							// 
+private:
+
 	void statusInfectee();
 	void dangerLevel();
 	void dangerLevelBar();
 	
 public:
+	int statusMask();							// 
 	void TotalStatus(int left, int top);
 	//void TotalStatus1(int left, int top,int x);
 	void setCorona(Corona* pcorona);	
