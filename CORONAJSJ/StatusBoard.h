@@ -1,13 +1,16 @@
 #pragma once
 #include "Corona.h"
 
-class StatusBoard								// 계산 클래스
+#define COUNTRY_MASK_NUM 100
+#define BASIC_MASK_NUM 100
+
+class StatusBoard			
 {
 private:
-	Corona* corona = NULL;						// 코로나 클래스 값
+	Corona* corona = NULL;	// 코로나 클래스 값
 
 public:
-	StatusBoard(Corona* pcorona = NULL);		// 
+	StatusBoard(Corona* pcorona = NULL);		
 	int statusinfectee;
 private:
 
@@ -15,11 +18,9 @@ private:
 	void dangerLevel();
 	void dangerLevelBar();
 	
-public:
-	int statusMask();							// 
+public:					
 	void TotalStatus(int left, int top);
-	//void TotalStatus1(int left, int top,int x);
 	void setCorona(Corona* pcorona);	
-	
+	int getMaskQuantity();
 };
 

@@ -4,6 +4,7 @@
 #include "America.h"
 #include "StatusBoard.h"
 #include <iostream>
+#pragma comment(lib, "winmm.lib")
 #include <ctime>
 #include <stdlib.h>
 #include <combaseapi.h>
@@ -11,37 +12,13 @@
 #include "turboc.h"
 #include <mmstream.h>
 
-#pragma comment(lib, "winmm.lib")
-
-int g_cnt = 0;
-
 #define END_NUM 3
-using namespace std;
 #define LEFT 10
 #define TOP 8
 #define music "bgm.wav"
 
-void CountrySelectAddMask(Corona** pcorona, int len, int sel, int m)
-{
-	//int left = 10;
-	/*int result = 0;
-	result = m;
-	pcorona[sel - 1]->Mask += result;*/
-	//StatusBoard statusboard;
-	pcorona[sel - 1]->Infected = pcorona[sel - 1]->Infected - m;
-	//for (int i = 0; i < END_NUM; ++i)
-	//{
-	//   //감염자 = 새로생긴 감염자 + 기존감염자
-	//
-	//   statusboard.setCorona(pcorona[i]);
-	//   statusboard.TotalStatus(10, 8);
-	//   left += 20;
-	//}
-
-	gotoxy(10, 16);
-	cout << "마스크가 " << pcorona[sel - 1]->CountryName << " 에게 " << m << "개" << "지급되었습니다" << endl;
-	//delay(1000);
-}
+using namespace std;
+int g_cnt = 0;
 
 void startCoronaVirus()
 {
@@ -66,15 +43,18 @@ void startCoronaVirus()
 	for (int i = 0; i < 40; i++)
 	{
 		cout << "에취 콜록 콜록 에취 콜록 콜록에취 콜록 콜록에취 콜록 콜록에취 콜록 콜록에취 콜록 콜록에취 콜록 콜록" << endl;
-		if (i == 2) {
+		if (i == 2)
+		{
 			Sleep(600);
 			Beep(900, 500);
 		}
-		if (i == 9) {
+		if (i == 9)
+		{
 			Sleep(300);
 			Beep(900, 500);
 		}
-		if (i == 25) {
+		if (i == 25)
+		{
 			Sleep(200);
 			Beep(900, 500);
 		}
@@ -99,45 +79,55 @@ void startScript()
 		printf("%c", script[i]);
 		Sleep(40);
 	}
+
+	system("color 04");
+	delay(1000);
+	delay(1000);
+	system("color 0F");
+}
+
+int showSelect(int x)
+{
+	int sel;
+	cout << "\n\n\n" << endl;
+	cout << "================================================================" << endl;
+	cout << "who에서 마스크가 " << x << " 개 지급되었습니다. " << endl;
+	cout << "어느 나라에게 지급하겠습니까?" << endl;
+	cout << "1.[ 중국 ] 2.[ 한국 ] 3.[ 미국 ]" << endl;
+	cin >> sel;
+
+	return sel;
+}
+
+void CountrySelectAddMask(Corona** pcorona, int len, int sel, int m)
+{
+	pcorona[sel - 1]->Infected = pcorona[sel - 1]->Infected - m;
+
+	gotoxy(10, 16);
+	cout << "마스크가 " << pcorona[sel - 1]->CountryName << " 에게 " << m << "개" << "지급되었습니다" << endl;
+}
+
+void eraseMem(Corona** pcorona, int len)
+{
+	for (int i = 0; i < len; i++)
+	{
+		delete[] pcorona;
+	}	
 }
 
 void main()
 {
-	/*PlaySound(TEXT(music), NULL, SND_ASYNC);*/
-	//_getch();
+	PlaySound(TEXT(music), NULL, SND_ASYNC); // 3.5sec
+	_getch();
 	int sel;
 
 	Corona* arrcorona[] = { new China(), new Korea(), new America() };
 	StatusBoard statusboard;
 
-	//startCoronaVirus();
-	//startScript();
-	//system("color 04");
-	//delay(1000);
-	//delay(1000);
-	//system("color 0F");
-	//cout << "당신은 UN 사무총장입니다. 코로나가 발병하였습니다. \n"
-	//	"각 나라별로 마스크를 생산하고 있지만 역부족입니다.\n"
-	//	"WHO에서도 마스크를 생산하고 지원할 예정입니다.\n"
-	//	"하지만 생산량이 많지 않아 한번에 한 국가에만 지원 할 수 있습니다.\n "
-	//	"당신의 선택이 앞으로 인류를 좌우 할 것입니다.\n"
-	//	"총 3번 지원해줄 수가 있습니다." << endl;
+	startCoronaVirus();
+	startScript();
 	cout << "================================================================" << endl;
-	//Sleep(2000);
-	//cout << "당신은 UN 사무총장입니다. 코로나가 발병하였습니다. " << endl;
-	//Sleep(2000);
-	//cout << "각 나라별로 마스크를 생산하고 있지만 역부족입니다." << endl;
-	//Sleep(2000);
-	//cout << "WHO에서도 마스크를 생산하고 지원할 예정입니다." << endl;
-	//Sleep(2000);
-	//cout << "하지만 생산량이 많지 않아 한번에 한 국가에만 지원 할 수 있습니다." << endl;
-	//Sleep(2000);
-	//cout << "당신의 선택이 앞으로 인류를 좌우 할 것입니다." << endl;
-	//Sleep(2000);
-	//cout <<  "총 3번 지원해줄 수가 있습니다." << endl;
-	//Sleep(2000);
-
-
+	
 	while (g_cnt <= END_NUM)
 	{
 		int left = 10;
@@ -151,14 +141,11 @@ void main()
 			cout << "<3회차>";
 		}
 
-
-		if (g_cnt != 0) {
+		if (g_cnt != 0) 
+		{
 			gotoxy(10, 7);
 			cout << "밤사이 감염자들이 늘어났습니다." << endl;
 		}
-		//delay(2000);
-
-
 
 		for (int i = 0; i < END_NUM; ++i)
 		{
@@ -169,14 +156,30 @@ void main()
 			left += 20;
 		}
 
+		for (int i = 0; i < END_NUM; ++i)
+		{
+			if (arrcorona[i]->Infected >= arrcorona[i]->Population) 
+			{
+				_getch();
+				system("cls");
+				cout << "실패" << endl;				
+				eraseMem(arrcorona, sizeof(arrcorona) / sizeof(arrcorona[0]));
+				exit(0);
+				//해골문양
+			}
+			if (g_cnt == END_NUM) {
+				//성공
+				_getch();
+				system("cls");
+				cout << "성공" << endl;
+				eraseMem(arrcorona, sizeof(arrcorona) / sizeof(arrcorona[0]));
+				exit(0);
 
-		int x = statusboard.statusMask();
-		cout << "\n\n\n" << endl;
-		cout << "================================================================" << endl;
-		cout << "who에서 마스크가 " << x << " 개 지급되었습니다. " << endl;
-		cout << "어느 나라에게 지급하겠습니까?" << endl;
-		cout << "1.[ 중국 ] 2.[ 한국 ] 3.[ 미국 ]" << endl;
-		cin >> sel;
+			}
+		}
+
+		int x = statusboard.getMaskQuantity();
+		sel = showSelect(x);
 
 		switch (sel)
 		{
@@ -192,26 +195,7 @@ void main()
 		default:
 			cout << "잘못 입력 하셨습니다!!" << endl;
 		}
-
 		//만약 하나의 국가의 감염자가 인구를 초과하면 게임오버 그렇지 않으면 클리어
-
-
-		for (int i = 0; i < END_NUM; ++i)
-		{
-			if (arrcorona[i]->Infected >= arrcorona[i]->Population) {
-				system("cls");
-				cout << "실패" << endl;
-				//해골문양
-			}
-			if (g_cnt == END_NUM) {
-				//성공            
-				system("cls");
-				cout << "성공" << endl;
-				exit(0);
-			}
-
-		}
-		g_cnt++;
-		//delete[];
+		g_cnt++;		
 	}
 }
