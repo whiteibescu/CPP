@@ -5,7 +5,7 @@ China::China()
 	srand((unsigned int)time(NULL));//턴마다 난수생성
 	this->Population = 700;
 	this->Mask = 0;
-	this->Infected = 0;
+	this->Infected = 500;
 	this->CountryName = "China";
 }
 

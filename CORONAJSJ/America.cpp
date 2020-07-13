@@ -4,9 +4,9 @@
 America::America()
 {
 	srand((unsigned int)time(NULL));//턴마다 난수생성
-	this->Population = 300;
+	this->Population = 500;
 	this->Mask = 0;
-	this->Infected = 0;
+	this->Infected = 200;
 	this->CountryName = "America";
 }
 

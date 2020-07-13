@@ -97,25 +97,25 @@ void startScript()
 	for (int i = 0; i < length; i++)
 	{
 		printf("%c", script[i]);
-		Sleep(30);
+		Sleep(40);
 	}
 }
 
 void main()
 {
 	/*PlaySound(TEXT(music), NULL, SND_ASYNC);*/
-	_getch();
+	//_getch();
 	int sel;
 
 	Corona* arrcorona[] = { new China(), new Korea(), new America() };
 	StatusBoard statusboard;
 
-	/*startCoronaVirus();*/
-	startScript();
-/*	system("color 04");
-	delay(1000);
-	delay(1000);
-	system("color 0F")*/;
+	//startCoronaVirus();
+	//startScript();
+	//system("color 04");
+	//delay(1000);
+	//delay(1000);
+	//system("color 0F");
 	//cout << "당신은 UN 사무총장입니다. 코로나가 발병하였습니다. \n"
 	//	"각 나라별로 마스크를 생산하고 있지만 역부족입니다.\n"
 	//	"WHO에서도 마스크를 생산하고 지원할 예정입니다.\n"

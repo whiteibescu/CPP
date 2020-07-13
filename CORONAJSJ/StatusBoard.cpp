@@ -13,14 +13,14 @@ void StatusBoard::dangerLevelBar()
 	if ((this->corona->Infected / this->corona->Population) * 100 <= 30)
 	{
 		cout << "¡¼¡á    ¡½" << endl;
-	}	
-	else if ((this->corona->Infected / this->corona->Population) * 100 > 30)
+	}	   
+	else if ((this->corona->Infected / this->corona->Population) * 100 > 30 && (this->corona->Infected / this->corona->Population) * 100 <= 60)
 	{
 		cout << "¡¼¡á¡á    ¡½" << endl;
 	}	
 	else if ((this->corona->Infected / this->corona->Population) * 100 > 60)
 	{
-		cout << "¡¼¡á¡á¡á¡á¡á ¡½" << endl;
+		cout << "¡¼¡á¡á¡á ¡½" << endl;
 	}
 }
 
@@ -33,7 +33,7 @@ void StatusBoard::dangerLevel()
 
 	}
 
-	else if ((this->corona->Infected / this->corona->Population) * 100 > 30)
+	else if ((this->corona->Infected / this->corona->Population) * 100 > 30 && (this->corona->Infected / this->corona->Population) * 100 <= 60)
 	{
 		cout << "ÁÖÀÇ" << endl;
 

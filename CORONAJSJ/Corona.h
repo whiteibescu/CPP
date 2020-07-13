@@ -8,9 +8,9 @@ using namespace std;
 
 interface Corona						// 인터페이스 코로나
 {
-	int Population;						// 인구(정수형)
+	double Population;						// 인구(정수형)
 	int Mask;							// 마스크(정수형)
-	int Infected;   					// 감염자(정수형)
+	double Infected;   					// 감염자(정수형)
 	string CountryName;					// 국가명(문자열)
 	
 	virtual void maskQuantity() = 0;	// 랜덤 마스크 생산 함수
