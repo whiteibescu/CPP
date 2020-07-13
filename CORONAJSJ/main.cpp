@@ -115,6 +115,19 @@ void eraseMem(Corona** pcorona, int len)
 	}	
 }
 
+void showFail()
+{
+	int num = 20;
+	for (int i = 0; i < num; i++) {
+		for (int j = 0; j < num + 30; j++) {
+			if (i == j || i + j == num - 1) { cout << "*"; }
+			else { cout << " "; }
+		}
+		cout << endl;
+	}
+
+}
+
 void main()
 {
 	PlaySound(TEXT(music), NULL, SND_ASYNC); // 3.5sec
@@ -164,6 +177,7 @@ void main()
 				system("cls");
 				cout << "실패" << endl;				
 				eraseMem(arrcorona, sizeof(arrcorona) / sizeof(arrcorona[0]));
+				showFail();
 				exit(0);
 				//해골문양
 			}
