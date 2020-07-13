@@ -3,6 +3,11 @@
 
 extern int g_cnt;
 
+StatusBoard::StatusBoard(Corona* pcorona)
+{
+	setCorona(pcorona);
+}
+
 int StatusBoard::getMaskQuantity()
 {
 	srand((unsigned int)time(NULL));
@@ -10,11 +15,6 @@ int StatusBoard::getMaskQuantity()
 	int num = rand() % COUNTRY_MASK_NUM + BASIC_MASK_NUM;
 
 	return num;
-}
-
-StatusBoard::StatusBoard(Corona* pcorona)
-{
-	setCorona(pcorona);
 }
 
 void StatusBoard::dangerLevelBar()
