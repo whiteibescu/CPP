@@ -111,7 +111,7 @@ void eraseMem(Corona** pcorona, int len)
 {
 	for (int i = 0; i < len; i++)
 	{
-		delete[] pcorona;
+		delete pcorona[i];
 	}	
 }
 
