@@ -1,8 +1,8 @@
 #pragma once
 #include "Corona.h"
 
-#define K_BASIC_INFECTEE_NUM 50
-#define K_COUNTRY_INFECTEE_NUM 100
+#define K_BASIC_INFECTEE_NUM 30
+#define K_COUNTRY_INFECTEE_NUM 80
 
 class Korea : public Corona
 {

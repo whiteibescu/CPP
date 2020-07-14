@@ -74,7 +74,7 @@ void startScript()
 		"총 3번 지원해줄 수가 있습니다.\n";
 	int length = strlen(script);
 
-	for (int i = 0; i < length; i++)
+	for (int i = 0; i < length; i++) 
 	{
 		printf("%c", script[i]);
 		Sleep(40);
@@ -169,7 +169,7 @@ void main()
 			left += 20;
 		}
 
-		for (int i = 0; i < END_NUM; ++i)
+		for (int i = 0; i < END_NUM; i++)
 		{
 			if (arrcorona[i]->Infected >= arrcorona[i]->Population) 
 			{
