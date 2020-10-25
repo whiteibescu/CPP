@@ -13,7 +13,7 @@ int main()
 
 	Graphics* pGraphics = new Graphics(GetDC(GetConsoleWindow()));
 	Image* pImage = pGraphics ? new Image(L"C:\\User\\white\\source\\repos\\whiteibescu\\CPP\\PlaySound\\pic.bmp") : NULL;
-												
+
 
 	if (pImage)
 	{
