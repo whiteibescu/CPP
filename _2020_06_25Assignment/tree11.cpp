@@ -11,7 +11,7 @@ void chopJudge(int decide, int kkong) {
     for (cnt = 1; cnt <= decide; ++cnt) {
         cout << "³ª¹«¸¦" << cnt << "¹ø Âï¾ú½À´Ï´Ù.\n";
         if (cnt % kkong == 0) {
-            cout << "Â½!\n";
+            cout << "Äô!\n";
         }
         cout << "°è¼Ó ÇØ¼­ ÂïÀ»±î¿ä?";
         cin >> con;
