@@ -18,5 +18,8 @@
     <ClCompile Include="static01.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="static02.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
