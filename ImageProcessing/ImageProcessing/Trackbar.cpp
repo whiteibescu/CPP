@@ -30,8 +30,6 @@ void onMouse(int event, int x, int y, int flags, void* param)
 }
 
 
-
-
 int main()
 {
 	int value = 128;
