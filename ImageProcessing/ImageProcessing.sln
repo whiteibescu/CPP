@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ImageProcessing", "ImagePro
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Homework0421", "Homework0421\Homework0421.vcxproj", "{E76395B8-B568-4E8C-AA89-01042070E23A}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Lecture_04_22", "Lecture_04_22\Lecture_04_22.vcxproj", "{C8AC958D-8106-444F-B6A7-C7A8F9E36BD2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -31,6 +33,14 @@ Global
 		{E76395B8-B568-4E8C-AA89-01042070E23A}.Release|x64.Build.0 = Release|x64
 		{E76395B8-B568-4E8C-AA89-01042070E23A}.Release|x86.ActiveCfg = Release|Win32
 		{E76395B8-B568-4E8C-AA89-01042070E23A}.Release|x86.Build.0 = Release|Win32
+		{C8AC958D-8106-444F-B6A7-C7A8F9E36BD2}.Debug|x64.ActiveCfg = Debug|x64
+		{C8AC958D-8106-444F-B6A7-C7A8F9E36BD2}.Debug|x64.Build.0 = Debug|x64
+		{C8AC958D-8106-444F-B6A7-C7A8F9E36BD2}.Debug|x86.ActiveCfg = Debug|Win32
+		{C8AC958D-8106-444F-B6A7-C7A8F9E36BD2}.Debug|x86.Build.0 = Debug|Win32
+		{C8AC958D-8106-444F-B6A7-C7A8F9E36BD2}.Release|x64.ActiveCfg = Release|x64
+		{C8AC958D-8106-444F-B6A7-C7A8F9E36BD2}.Release|x64.Build.0 = Release|x64
+		{C8AC958D-8106-444F-B6A7-C7A8F9E36BD2}.Release|x86.ActiveCfg = Release|Win32
+		{C8AC958D-8106-444F-B6A7-C7A8F9E36BD2}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
